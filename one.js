@@ -4,6 +4,19 @@ function one() {
 		var current = document.querySelectorAll(".one")[i].innerHTML;
 		document.querySelectorAll(".one")[i].innerHTML = "<div class='-one'>" + current + "</div>";
 	}
+	var h = document.querySelectorAll(".container");
+	for (i = 0; i < h.length; i++) {
+		var maxHeight = 0;
+		var elts = document.querySelectorAll(".container")[i].querySelectorAll(".one");
+		for (j = 0; j < elts.length; j++) {
+			if (maxHeight < elts[j].querySelector(".-one").offsetHeight) {
+				maxHeight = elts[j].querySelector(".-one").offsetHeight;
+			}
+		}
+		for (j = 0; j < elts.length; j++) {
+			elts[j].querySelector(".-one").style.height = maxHeight + "px";
+		}
+	}
 }
 
 if (document.readyState != "loading"){
