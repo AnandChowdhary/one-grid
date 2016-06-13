@@ -1,0 +1,1 @@
+.container{width:95%;max-width:1100px;margin:0 auto}.row:after{content:"";display:block;clear:both}.one{float:left;margin-right:2.5%;box-sizing:border-box}.third{width:calc(95%/3)}.half{width:calc((97.5%)/ 2)}.fourth{width:calc((92.5%)/ 4)}.fifth{width:calc(90%/5)}.fifth.two{width:38.5%}.one:last-child{margin-right:0}
